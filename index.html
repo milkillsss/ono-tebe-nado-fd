@@ -11,39 +11,33 @@
     <link rel="stylesheet" href="./styles/style.css">
   </head>
 
-  <body>
-    <div class="container">
+  <body class="container">
     <header class="header">
-      <form class="header-form">
 
-        <nav class="header__menu">
-          <ul class="header__menu-ul">
-            <li class="header__menu-item menu-item"><a class="header__menu-link">главная</a></li>
-            <li class="header__menu-items menu-item"><a class="header__menu-link" href="#lots">посмотреть лоты</a></li>
-            <li class="header__menu-items menu-item"><a class="header__menu-link" href="#about">об аукционе</a></li>
+        <nav class="menu-list">
+          <ul class="header__menu-list">
+            <li class="header__menu-item"><a class="header__menu-link-not-marker" href="#cover">главная</a></li>
+            <li class="header__menu-item header__menu-item--with-marker"><a class="header__menu-link" href="#lots">посмотреть лоты</a></li>
+            <li class="header__menu-item header__menu-item--with-marker"><a class="header__menu-link" href="#about">об аукционе</a></li>
           </ul>
         </nav>
+        
+        <a class="header__logo" href="#0">
+          <img
+            class="header__logo-image"
+            src="images/logo-black.svg"
+            alt="Логотип ОНО ТЕБЕ НАДО"
+          />     
+        </a>
 
-        <div class="header__logo">
-          <a href="http://127.0.0.1:5500/setup/index.html">
-            <img
-             class="header__logo-image"
-             src="images/logo-black.svg"
-             alt="Логотип ОНО ТЕБЕ НАДО"
-            />     
-          </a>
-        </div>
-
-        <div class="header__links">
-          <a class="links-item links-item1" href="tel:+99995555555">+9 999 555 5555</a>
-          <a class="links-item links-item1" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-          <a class="links-item">наб. Принсенграхт 263-</a>
-          <a class="links-item">265, Амстердам</a>
-        </div>
-
-       </form>
+        <address class="links">
+          <a class="links-item links-item-inf" href="tel:+99995555555">+9 999 555 5555</a>
+          <a class="links-item links-item-inf" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+          <p class="links-item">наб. Принсенграхт 263-</p>
+          <p class="links-item">265, Амстердам</p>
+        </address>
+       
     </header>
-
 
     <main> 
       <section class="cover" id="cover">
@@ -53,34 +47,28 @@
           alt="Рисунок цветов"
         />
 
-        <div class="cover-color"></div>
+        <div class="overlay"></div>
+        
+        <h1 class="cover__title">
+          <span class="cover-word text-align-left">
+            <span>О</span><span>Н</span><span>О</span>
+          </span>
+          <span class="cover-word text-align-center">
+            <span>Т</span><span>Е</span><span>Б</span><span>Е</span>
+          </span>
+          <span class="cover-word text-align-right">
+            <span>Н</span><span>А</span><span>Д</span><span>О</span>
+          </span>
+        </h1>
 
-       <!-- <article class="cover__title">
-          <h1 class="cover-word ono">ОНО</h1>
-          <h1 class="cover-word tebe">ТЕБЕ</h1>
-          <h1 class="cover-word nado">НАДО</h1>
-        </article>-->
-        <article class="cover__title">
-        <h1 class="cover-word ono">
-        <span>О</span><span>Н</span><span>О</span>
-        </h1>
-        <h1 class="cover-word tebe">
-        <span>Т</span><span>Е</span><span>Б</span><span>Е</span>
-        </h1>
-        <h1 class="cover-word nado">
-        <span>Н</span><span>А</span><span>Д</span><span>О</span>
-        </h1>
-        </article>
-
-        <article class="cover__description">
+        <div class="cover__description">
           <p class="cover__text">Аукцион вещей, в которые никто не верил</p>
           <button class="cover__button">Сделать ставку</button>
-        </article>
-      </section>
-      
+        </div>
+      </section>     
 
       <section class="block-lots" id="lots">
-        <h2 class="h2 h2-lots">Лоты</h2>
+        <h2 class="title title-lots">Лоты</h2>
         <div class="lots">
 
           <article class="frame">
@@ -89,7 +77,7 @@
               src="images/card-lot-01.jpg"
               alt="Кадр из фильма Пола Томаса Андерсона"
             />
-            <div class="frame-color"></div>
+            <div class="overlay"></div>
             <div class="frame-title-text">
               <h3 class="frame-title">Фильм режиссёра, который бросил киношколу</h3>
               <p class="frame-text">
@@ -106,7 +94,7 @@
               src="images/card-lot-02.jpg"
               alt="Книга Джеймса Джойса - «Улисс»"
             />
-            <div class="frame-color"></div>
+            <div class="overlay"></div>
             <div class="frame-title-text">
               <h3 class="frame-title">Книга, где описан один скучный день из жизни рекламного агента</h3>
               <p class="frame-text">
@@ -125,7 +113,7 @@
               src="images/card-lot-03.jpg"
               alt="Картина Кандинского"
             />
-            <div class="frame-color"></div>
+            <div class="overlay"></div>
             <div class="frame-title-text">
               <h3 class="frame-title">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
               <p class="frame-text">
@@ -155,16 +143,16 @@
               alt="Логотип ОНО ТЕБЕ НАДО"
             />
           </div>
-          <h2 class="about-title h2">Об аукционе</h2>
+          <h2 class="about-title title">Об аукционе</h2>
         </aside>
 
         <article class="about-text">
-          <p class="about-text1">Здесь вы не встретите очередное пафосное собрание невероятно дорогого 
+          <p>Здесь вы не встретите очередное пафосное собрание невероятно дорогого 
             антиквариата. Наши лоты вообще не должны были попасть ни на один 
             аукцион. Потому что кому нужен дневник девочки-подростка или картина, 
             которую может нарисовать даже ребёнок? Кому нужны все эти странные 
             вещи, созданные любителями?</p>
-          <p class="about-text2">Слишком сложные или, наоборот, слишком простые. Опережающие своё время. 
+          <p>Слишком сложные или, наоборот, слишком простые. Опережающие своё время. 
             В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то 
             они казались просто неудачными. Но, несмотря на критику, кажущуюся 
             простоту или сложность, сейчас без этих лотов невозможно представить 
@@ -176,31 +164,26 @@
 
 
     <footer class="footer">
-      <form class="footer-form">
+      <div class="footer__content">
+        <address class="links">
+          <a class="links-item links-item-inf" href="tel:+99995555555">+9 999 555 5555</a>
+          <a class="links-item links-item-inf" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+          <p class="links-item">наб. Принсенграхт 263-</p>
+          <p class="links-item">265, Амстердам</p>
+        </address>
 
-        <section class="footer__links">
-          <a class="links-item links-item1" href="tel:+99995555555">+9 999 555 5555</a>
-          <a class="links-item links-item1" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-          <a class="links-item">наб. Принсенграхт 263-</a>
-          <a class="links-item">265, Амстердам</a>
-        </section>
-
-        <nav class="footer__menu">
-          <section class="footer__menu-list">
-            <a class="footer__menu-item">главная</a>
-            <a class="footer__menu-item footer__menu-item1" href="#lots">посмотреть лоты</a>
-            <a class="footer__menu-item footer__menu-item1" href="#about">об аукционе</a>
-          </section>
+        <nav class="menu-list footer__menu-list">
+          <a class="footer__menu-item header__menu-link-not-marker" href="#cover">главная</a>
+          <a class="footer__menu-item footer__menu-item-lots" href="#lots">посмотреть лоты</a>
+          <a class="footer__menu-item footer__menu-item-lots" href="#about">об аукционе</a>
         </nav>
 
-        <section class="footer__images">
+        <div class="footer__images">
           <a href="https://www.youtube.com" target="_blank"><img class="footer__image" src="images/yt.svg" alt="YouTube"></a>
           <a href="https://vk.com" target="_blank"><img class="footer__image" src="images/vk.svg" alt="VK"></a>
           <a href="https://ru.pinterest.com" target="_blank"><img class="footer__image" src="images/pinterest.svg" alt="Pinterest"></a>
-        </section>
-
-      </form>
+        </div>
+      </div>
     </footer>
-    </div>
   </body>
 </html>
