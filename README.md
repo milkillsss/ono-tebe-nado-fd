@@ -1,1 +1,1 @@
-https://github.com/milkillsss/ono-tebe-nado-alina
+https://github.com/milkillsss/ono-tebe-nado-fd
