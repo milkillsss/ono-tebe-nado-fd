@@ -49,8 +49,8 @@
     float: left;
     margin-right: 10px;
     margin-left: 5px;
-    list-style-type: none; 
-    color: black;
+    list-style-type: none;
+    color: #000;
 }
 
 .header__menu-link-not-marker {
@@ -58,7 +58,7 @@
 }
 
 .header__menu-item--with-marker {
-    list-style-type: circle;  
+    list-style-type: circle;
 }
 
 .header__menu-link {
@@ -218,7 +218,7 @@ h2 {
 .title-lots {
     width: 121px;
     line-height: 24.3px;
-    margin: 0 0 0 64px;
+    margin: 0 0 27px 64px;
 }
 
 .lots {
@@ -236,7 +236,7 @@ h2 {
     width: calc(33.333% - 20px);
     max-width: 334px;
     min-height: 596px;
-    margin: 27px 0 30px;
+    margin-bottom: 27px;
 }
 
 .frame-image {
