@@ -90,6 +90,10 @@
     justify-self: end;
 }
 
+address {
+    font-style: normal;
+}
+
 .links-item {
     display: block;
     font-size: 18px;
@@ -235,6 +239,8 @@ h2 {
     position: relative;
     width: calc(33.333% - 20px);
     max-width: 334px;
+    display: flex;
+    flex-direction: column;
     min-height: 596px;
     margin-bottom: 27px;
 }
@@ -244,19 +250,16 @@ h2 {
     height: 100%;
     object-fit: cover;
     display: block;
-    position: relative;
+    position: absolute;
     z-index: 1;
 }
 
 .frame-title-text {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    position: relative;
     z-index: 3;
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
     justify-content: space-between;
     padding: 48px 40px;
     box-sizing: border-box;
@@ -269,8 +272,10 @@ h2 {
     text-transform: uppercase;
     text-decoration: underline;
     text-decoration-style: solid;
-    text-decoration-thickness: 2px;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
     color: white;
+     margin: 0 0 20px 0;
 }
 
 .frame-text {
@@ -368,7 +373,8 @@ h2 {
 .footer__menu-item {
     display: block;
     line-height: 1;
-    margin: 0;
+    
+    margin-bottom: 3px;
 }
 
 .footer__menu-item-lots {
